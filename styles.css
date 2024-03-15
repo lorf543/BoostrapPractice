@@ -1,0 +1,103 @@
+:root {
+  --primary-color: rgb(17, 26, 34);
+  --secondary-color: rgb(214, 97, 43);
+}
+
+body {
+  background-color: var(--secondary-color);
+}
+
+.navbar-custom {
+  background-color: var(--primary-color);
+}
+
+.box {
+  border-bottom-right-radius: 25%;
+  background: var(--primary-color);
+  height: 85vh;
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.sign-up {
+  width: 100px;
+  background-color: #fff;
+  color: var(--secondary-color);
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.sign-up:hover {
+  color: #000;
+}
+
+.nav-link:not(:last-child):hover::after {
+  content: "";
+  display: block;
+  border-top: 2px solid var(--secondary-color);
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+.apkly {
+  display: flex;
+  justify-content: center; /* Horizontally center the content */
+  align-items: center; /* Vertically center the content */
+  height: 100px; /* Set a specific height for the box */
+  background-color: var(--secondary-color);
+  width: 100px;
+  padding-top: 25px;
+  margin-top: -25px;
+}
+
+.hero-text {
+  color: var(--secondary-color);
+  font-size: 4rem;
+  font-weight: 700;
+  letter-spacing: -5px;
+}
+
+.hero-info {
+  font-weight: 700;
+}
+
+.buttom-get {
+  width: 125px;
+  height: 50px;
+  font-weight: 700;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: 0;
+  border-radius: 30px;
+}
+
+.box-circle {
+  position: relative;
+  height: 450px;
+  width: 450px;
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+}
+
+.box-circle::before {
+  content: "";
+  position: absolute;
+  top: 25px; 
+  left: 25px; 
+  width: 400px; 
+  height: 400px; 
+  background-color: var(--primary-color); 
+  border-radius: 50%;
+}
+
+.overview {
+  background-color: #fff;
+  height: 750px;
+}
